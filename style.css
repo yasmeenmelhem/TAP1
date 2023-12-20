@@ -1,0 +1,165 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up font and colors */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #3BBADB;
+    border: 5px solid #3BBADB; /* Add a blue border around the entire page */
+    padding: 20px; /* Add padding to create space between content and border */
+    height: 650px;
+}
+
+header {
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    margin-right: 20px; /* Adjust margin for smaller screens */
+    margin-top: 20px; /* Adjust margin for smaller screens */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjust margin for smaller screens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+nav ul li a span {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.fa-home {
+    color: #D1884F !important;
+}
+
+nav ul li a[href="#home"] {
+    color: #D1884F; /* Set the color to red for the "Home" link */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+    align-items: center;
+    justify-content: space-between; /* Add space between text and image */
+}
+
+.text-content {
+    flex: 1; /* Allow text content to take up remaining space */
+    margin-left: 20px; /* Adjust margin for smaller screens */
+}
+
+.right-image {
+    max-width: 100%; /* Make the image responsive */
+    border-radius: 0 0 0 50%; /* Apply border-radius to the bottom-left corner */
+    overflow: hidden;
+    box-shadow: -20px 5px 0 rgba(58, 97, 214, 0.5); /* Add a gray shadow to the image */
+    margin-right: 20px; /* Adjust margin for smaller screens */
+}
+
+.main-section {
+    text-align: left; /* Align content to the left */
+    padding: 50px;
+    color: #fff;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button,
+.button-2 {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #3BBADB; /* Blue border for both buttons */
+}
+
+.button-2 {
+    color: #3BBADB;
+    background-color: #fff; /* Background color for the "See My Project" button */
+}
+
+.section-2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2.3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.para-one {
+    color: #3BBADB;
+    padding-bottom: 16px;
+}
+
+.para-2 {
+    color: #000;
+    font-size: 15px;
+}
+
+.para-3,
+.para-4,
+.para-4 span {
+    color: #008AAA;
+}
+
+.para-4 span {
+    color: #D1884F;
+}
+
+.seeMore {
+    color: #3BBADB;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        height: auto; /* Remove fixed height for smaller screens */
+    }
+
+    nav ul {
+        justify-content: center; /* Center links for smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Adjust margin for smaller screens */
+    }
+
+    .content {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center;
+    }
+
+    .right-image {
+        margin-top: 20px; /* Add space between text and image on smaller screens */
+    }
+
+    .text-content {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    .button,
+    .button-2 {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        margin: 0 5px;
+    }
+
+    .main-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
